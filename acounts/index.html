@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Back Acount</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-zinc-200">
+
+    <!-- Account dashboard -->
+        <section class="account-dashboard ">
+            <div class="dashboard-inner w-9/12 bg-zinc-100 p-20 rouneded rounded-2xl my-28 mx-auto">
+                <h1 class="font-bold text-3xl text-black mb-3"> Welcome To your Banck Dashboard!</h1>
+                <p class="mb-12 text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente adipisci qui, nam, hic <br> vitae magnam totam laborum et maiores voluptas numquam quis repudiandae accusamus! Necessitatibus repellat a unde soluta?</p>
+                
+                <div class="acount-info flex gap-12">
+                    <div class="woner-info bg-zinc-50 p-8 rounded-xl shadow-md flex-initial w-8/12">
+                        <h1 class="font-bold text-2xl text-black mb-3">Hey, Good Morning !</h1>
+                        <h2 class="font-medium text-slate-500	">Nazmun Sakib,</h2>
+                        <h4 class="font-medium text-slate-500	">Account Type: Savings Account!</h4>
+                    </div>
+                    <div class="balence-info bg-zinc-50 rounded-xl p-8 shadow-md">
+                        <h3 class="font-medium text-black" >Upcomming Balance: $<span id="up-palance">400</span></h3>
+                        <h3 class="font-medium text-black mt-3" >Abaible Funds $<span id="av-balance">900</span></h3>
+                    </div>
+                </div>
+
+                <div class="account-optiuons grid gap-12 grid-cols-3">
+                    <div class="add-balance bg-zinc-50 p-8 rounded-xl rounded-xl shadow-md mt-10">
+                        <h3 class="font-bold text-xl text-slate-500	">Add Balance</h3>
+                        <input type="number" name="balance-add" class="w-full p-3 rounded-xl my-4 border border-gray-300" id="balance-add" placeholder="Amount">
+                        <button class="py-3 px-7 uppercase font-medium bg-violet-600 text-white rounded-xl" id="balance-add-btn">Request</button>
+                    </div>
+                    <div class="wathdraw-blance bg-zinc-50 p-8 rounded-xl shadow-md mt-10">
+                        <h3  class="font-bold text-xl text-slate-500"	>Wathdraw Balance</h3>
+                        <input type="number" name="blance-wathdraw" class="w-full p-3 rounded-xl my-4 border border-gray-300" id="balance-wathdraw" placeholder="Amount">
+                        <button class="py-3 px-7 uppercase font-medium bg-violet-600 text-white rounded-xl" id="balance-wathdraw-btn">Request</button>
+                    </div>
+                    <div class="transfer-balance bg-zinc-50  p-8 rounded-xl shadow-md mt-10">
+                        <h3 class="font-bold text-xl text-slate-500">Add Transfer</h3>
+                        <input type="number" name="balance-transfer" class="w-full p-3 rounded-xl my-4 border border-gray-300" id="balance-transfer" placeholder="Amount">
+                        <button class="py-3 px-7 uppercase font-medium bg-violet-600 text-white rounded-xl" id="balance-transfer-btn">Request</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Account dashboard End-->
+    
+    <script src="app.js"></script>
+</body>
+</html>
